@@ -3,6 +3,10 @@ const express = require(`express`);
 const app = express();
 const db = require(`./db`); // Databasetilkobling
 
+// Bruke express til å håndtere data
+app.use(express.urlencoded({ extended: true })); // For å lese og bruke data fra skjema
+app.use(express.json); // Håndterer JSON data
+
 // Globale variabler
 const PORT = 8000;
 
