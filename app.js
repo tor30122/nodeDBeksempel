@@ -23,6 +23,12 @@ app.get(`/nybruker`, (req, res) => {
     res.render(`nybruker`);
 });
 
+app.post(`/nybruker`, (req, res) => {
+    console.log(req.body)
+    res.render(`nybruker`);
+});
+
+
 // Start server
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
