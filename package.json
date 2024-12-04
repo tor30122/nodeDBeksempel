@@ -1,0 +1,11 @@
+{
+  "name": "nodedbeksempel",
+  "version": "1.0.0",
+  "description": "Eksempel på nettside med database",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tor Steinar Gulliksen",
+  "license": "ISC"
+}
