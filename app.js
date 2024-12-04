@@ -9,6 +9,10 @@ const PORT = 8000;
 // Sette ejs som view engine
 app.set(`view engine`, `ejs`);
 
+app.get(`/`, (req, res) => {
+    res.render(`index`);
+});
+
 
 // Start server
 app.listen(PORT, () => {
