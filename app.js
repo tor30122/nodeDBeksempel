@@ -10,11 +10,10 @@ const PORT = 8000;
 app.set(`view engine`, `ejs`);
 
 app.get(`/`, (req, res) => {
-    res.render(`index`);
+  res.render(`index`);
 });
-
 
 // Start server
 app.listen(PORT, () => {
-    console.log(`Server is running on http://localhost:${PORT}`)
+  console.log(`Server is running on http://localhost:${PORT}`);
 });
