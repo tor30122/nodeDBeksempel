@@ -10,34 +10,30 @@
     />
   </head>
   <body>
-    <main class="container" >
+    <main class="container">
+        <!-- Meldingsseksjon -->
+        <% if (melding) { %>
+          <article>
+            <h3><%= melding %></h3>
+          </article>
+        <% } %>
+
+        <!-- Skjema for registrering -->
+
       <h1>Registerer ny bruker</h1>
       <form action="/nybruker" method="POST">
         <fieldset>
           <label>
             Navn
-            <input
-              type="text"
-              name="navn"
-              placeholder="Navn"
-              required
-            />
+            <input type="text" name="navn" placeholder="Navn" required />
           </label>
           <label>
             Epost
-            <input
-              type="email"
-              name="epost"
-              placeholder="E-post"
-            />
+            <input type="email" name="epost" placeholder="E-post" />
           </label>
           <label>
             Telefon
-            <input
-              type="tel"
-              name="telefon"
-              placeholder="Telefonnummer"
-            />
+            <input type="tel" name="telefon" placeholder="Telefonnummer" />
           </label>
         </fieldset>
         <button type="submit">Registrer</button>

@@ -19,7 +19,10 @@ app.get(`/`, (req, res) => {
 });
 
 app.get(`/nybruker`, (req, res) => {
-  res.render(`nybruker`);
+  res.render(`nybruker`, {
+    melding: null,
+    type: null,
+  });
 });
 
 app.post(`/nybruker`, (req, res) => {
@@ -33,7 +36,10 @@ app.post(`/nybruker`, (req, res) => {
       console.error("Feil ved registrering av person:", err);
       return res.status(500).send("Kunne ikke registrere personen.");
     }
-    res.send("Person registrert!");
+    res.render("nybruker", {
+      melding: "Ny bruker registrert!",
+      type: "success",
+    });
   });
 });
 
