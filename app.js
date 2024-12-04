@@ -9,8 +9,14 @@ const PORT = 8000;
 // Sette ejs som view engine
 app.set(`view engine`, `ejs`);
 
+
+// Ruter til ulike sider
 app.get(`/`, (req, res) => {
   res.render(`index`);
+});
+
+app.get(`/nybruker`, (req, res) => {
+    res.render(`nybruker`);
 });
 
 // Start server

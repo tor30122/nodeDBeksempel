@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Velkommen</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Registerer ny bruker</h1>
+      <form action="/registrer-person">
+        <fieldset>
+          <label>
+            Navn
+            <input
+              type="text"
+              name="navn"
+              placeholder="Navn"
+              required
+            />
+          </label>
+          <label>
+            Epost
+            <input
+              type="email"
+              name="epost"
+              placeholder="E-post"
+            />
+          </label>
+          <label>
+            Telefon
+            <input
+              type="tel"
+              name="telefon"
+              placeholder="Telefonnummer"
+            />
+          </label>
+        </fieldset>
+        <button type="submit">Registrer</button>
+      </form>
+    </main>
+  </body>
+</html>
